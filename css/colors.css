@@ -18,6 +18,7 @@ body{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0,0,0,.25);
     margin-top: 120px;
+    position: relative;
 }
 
  .titulo{
@@ -30,10 +31,19 @@ body{
     position: relative;
 }
 
+.not{
+    font-size: 12px;
+    color: #fff;
+    font-weight: normal;
+    top: 0;
+    left: 60px;
+    text-align: center;
+}
+
 .titulo::after{
     content: '';
     position: absolute;
-    top: 3px;
+    top: 2px;
     margin-left: 5px;
     height: 26px;
     width: 3px;
@@ -128,6 +138,7 @@ body{
     font-size: 24px;
     color: #fff;
     max-width: 240px;
+    font-weight: bold;
     margin: 80px auto 0px auto;
     height: 80px;
 }
