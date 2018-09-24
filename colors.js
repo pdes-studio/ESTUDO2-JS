@@ -19,35 +19,35 @@ function colorJS(){
 
         let bodyElement = document.querySelector('body').style.background = `${btnValue}`;
 
-        if(btnValue = 'azul'){
+        if(btnValue === 'azul'){
             bodyElement = document.querySelector('body').style.background = `#0652DD`;
         }
 
-        if(btnValue = 'amarelo'){
+        if(btnValue === 'amarelo'){
             bodyElement = document.querySelector('body').style.background = `#FFC312`;
         }
 
-        if(btnValue = 'laranja'){
+        if(btnValue === 'laranja'){
             bodyElement = document.querySelector('body').style.background = `#EE5A24`;
         }
 
-        if(btnValue = 'vermelho'){
+        if(btnValue === 'vermelho'){
             bodyElement = document.querySelector('body').style.background = `#ED4C67`;
         }
 
-        if(btnValue = 'verde'){
+        if(btnValue === 'verde'){
             bodyElement = document.querySelector('body').style.background = `#009432`;
         }
 
-        if(btnValue = 'roxo'){
+        if(btnValue === 'roxo'){
             bodyElement = document.querySelector('body').style.background = `purple`;
         }
 
-        if(btnValue = 'marrom'){
+        if(btnValue === 'marrom'){
             bodyElement = document.querySelector('body').style.background = `brown`;
         }
 
-        if(btnValue = 'preto'){
+        if(btnValue === 'preto'){
             bodyElement = document.querySelector('body').style.background = `#111`;
         }
 
