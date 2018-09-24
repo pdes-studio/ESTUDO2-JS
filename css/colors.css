@@ -1,0 +1,123 @@
+img { display: block; max-width: 100%; }
+
+*{ padding: 0; margin: 0; box-sizing: border-box; font-family: monospace; box-sizing: border-box; }
+
+a, ul, li { text-decoration: none; color: none;}
+
+body{
+    background: #333;
+    transition: .7s ease-in;
+}
+
+.container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 20px;
+}
+
+ .titulo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+#color, #submit{
+    margin: 0 auto;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+#color {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 240px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#submit {
+    background: #7646ff;
+    border: 1px solid #f3f3f3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 240px;
+    color: #fff;
+    margin-top: 24px;
+    border-radius: 5px;
+}
+
+.container .content{
+    display: flex;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.content .length, .content .firstLetter, .content .lastLetter{
+    width: 80px;
+    height: 80px;
+    background: #f3f3f3;
+    padding: 10px;
+    margin: 40px auto 0px auto;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.content .length span, .content .firstLetter span, .content .lastLetter span{
+    text-transform: lowercase;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    color: #333;
+    transition: .8 ease-in;
+}
+
+.content .length div, .content .firstLetter div, .content .lastLetter div{
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    height: 40px;
+    width: 80px;
+    background: #333;
+    transform: translate(-10px, 0px);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    transition: .3s;
+    color: #fff;
+}
+
+.length div::before, .firstLetter div::before, .lastLetter div::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 16px;
+    background: #333;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    left: 30px;
+    transform: rotate(45deg);
+}
+
+.length:hover div, .firstLetter:hover div, .lastLetter:hover div{
+    transform: translate(-10px, 15px);
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in;
+}
+
+.notification{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    max-width: 300px;
+    margin: 60px auto 0px auto;
+}
